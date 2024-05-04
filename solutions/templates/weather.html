@@ -1,0 +1,19 @@
+<!-- templates/weather.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Weather Forecast for {{ data.City }}</h2>
+        <p>Temperature: {{ data.Temperature }}</p>
+        <p>Pressure: {{ data.Pressure }}</p>
+        <p>Humidity: {{ data.Humidity }}</p>
+        <a href="\">Homepage</a>
+
+    </div>
+</body>
+</html>

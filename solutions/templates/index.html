@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the Weather Forecast</h2>
+        <form method="POST" action="/city">
+            <label for="city_name">City:</label>
+            <input type="text" id="city_name" name="city_name" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
